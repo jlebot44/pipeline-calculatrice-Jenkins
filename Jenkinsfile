@@ -12,7 +12,6 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
-    }
 
         stage('Test') {
             agent {
@@ -28,5 +27,6 @@ pipeline {
                     junit "test-reports/results.xml"
                 }
             }
-    }
+        }
+    }    
 }
