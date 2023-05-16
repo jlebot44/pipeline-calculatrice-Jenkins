@@ -4,7 +4,7 @@ pipeline {
         stage('Branche') {
             agent any
             steps {
-                echo 'nom-de-la-branche main'
+                echo 'nom-de-la-branche main - test2'
             }
         }
         stage('Build') {
